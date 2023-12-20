@@ -11,7 +11,7 @@ public class HelloController {
         return "Hello World";
     }
 
-    @PostMapping("hello")
+    @PostMapping("/hello")
     public String sayHelloTo(@RequestBody Product product){
         return "Hello: " + product;
     }
