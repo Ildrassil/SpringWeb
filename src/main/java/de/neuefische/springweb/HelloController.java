@@ -47,9 +47,7 @@ public class HelloController {
 
     @GetMapping("/message/getAll")
     public List<Message> getAllMessages(){
-        messages.add (new Message("Johnny", "Wo ist Johnny?", "1"));
-        messages.add (new Message("Johnny2", "Johnny hat sich mein Kugelschreiber in den ***** gesteckt!", "2"));
-        messages.add (new Message("Johnny3", "Johnny hat schon wieder mein Bier getrunken.", "3"));
+
         return messages;
 
     }
