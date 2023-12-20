@@ -12,13 +12,7 @@ public class HelloController {
 
 
 
-   public ResponseEntity<List<Message>> stockMessage() {
-       messages.add (new Message("Johnny", "Wo ist Johnny?", "1"));
-       messages.add (new Message("Johnny2", "Johnny hat sich mein Kugelschreiber in den ***** gesteckt!", "2"));
-       messages.add (new Message("Johnny3", "Johnny hat schon wieder mein Bier getrunken.", "3"));
-       return ResponseEntity.ok(messages);
 
-   }
 
     @GetMapping("/hello")
     public String helloWorld(){
