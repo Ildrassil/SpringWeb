@@ -7,12 +7,11 @@ import lombok.Setter;
 
 @Data
 @AllArgsConstructor
-@Setter
-@Getter
+
 public class Message {
-    String name;
-    String message;
-    String id;
+    private String name;
+    private String message;
+    private String id;
 
 
 }

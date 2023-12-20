@@ -39,10 +39,10 @@ public class HelloController {
     }
 
 @PostMapping("/messageCreate")
-    public ResponseEntity<?> createMessageList(@RequestBody String name, String message, String id){
-        Message msg = new Message(name,message,id);
-        messages.add(msg);
-        return ResponseEntity.ok("Message added Successfully");
+    public ResponseEntity<?> createMessageList(@RequestBody Message message){
+
+        messages.add(message);
+        return ResponseEntity.ok("Message added Successfully" + message.toString());
     }
 
     @GetMapping("/message/getAll")
