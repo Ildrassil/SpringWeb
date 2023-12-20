@@ -9,6 +9,9 @@ public class HelloController {
     @GetMapping("/hello")
     public String helloWorld(){
         return "Hello World";
+    } @GetMapping("/hello/John")
+    public String helloJohn(){
+        return "Hello John";
     }
 
     @PostMapping("/hello")
